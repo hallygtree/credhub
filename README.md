@@ -808,3 +808,9 @@ credhub/
     ├── package.json
     └── vite.config.ts
 ```
+
+---
+
+## Licença
+
+[MIT](LICENSE)
