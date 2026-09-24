@@ -1,6 +1,11 @@
 # CredHub
 
-Sistema de crédito corporativo para empresas e usuários individuais. Empresas parceiras gerenciam o saldo de crédito dos seus colaboradores. Usuários avulsos também podem se cadastrar diretamente via CPF e recarregar saldo via Pix.
+![Projeto de estudo](https://img.shields.io/badge/projeto-de%20estudo-orange)
+
+> [!WARNING]
+> **Este é um projeto puramente de estudo.** Foi criado para praticar desenvolvimento full-stack (autenticação, RBAC, transações, integração de pagamentos e testes). Não é um produto e nenhuma empresa o usa. Não processa pagamentos reais e não deve ser usado em produção. Empresas, pessoas, CNPJs, CPFs e credenciais citados aqui são fictícios.
+
+Projeto de estudo de um sistema de crédito corporativo para empresas e usuários individuais. Empresas parceiras gerenciam o saldo de crédito dos seus colaboradores. Usuários avulsos também podem se cadastrar diretamente via CPF e recarregar saldo via Pix (sandbox do Mercado Pago).
 
 ---
 
@@ -26,7 +31,7 @@ Sistema de crédito corporativo para empresas e usuários individuais. Empresas 
 
 ## Visão Geral
 
-O **CredHub** é uma plataforma web completa para gestão de créditos corporativos. Possui dois modelos de uso:
+O **CredHub** é um projeto de estudo que simula uma plataforma web de gestão de créditos corporativos. Possui dois modelos de uso:
 
 1. **Modelo Corporativo:** Empresas parceiras cadastram seus colaboradores. O gestor da empresa (COMPANY_VIEWER) recarrega saldo via Pix para um ou múltiplos colaboradores de uma só vez. Os colaboradores utilizam o saldo via cartão de acesso ou CPF.
 
@@ -562,7 +567,9 @@ cd backend && npm run build && npm start
 cd frontend && npm run build   # Gera dist/ para servir com Nginx ou similar
 ```
 
-### Opção 3: Docker Compose (produção)
+### Opção 3: Docker Compose (setup de produção)
+
+> Incluído como exercício de deploy. O projeto não está rodando em produção em lugar nenhum.
 
 ```bash
 # Configure as variáveis de ambiente necessárias
@@ -627,7 +634,7 @@ Arquivos de teste em `src/__tests__/`:
 
 ## Credenciais de Demo
 
-Após executar `npm run seed` no backend, os seguintes usuários são criados com dados históricos de novembro/2025 a fevereiro/2026:
+Todos os dados abaixo são fictícios. Após executar `npm run seed` no backend, os seguintes usuários são criados com dados históricos de novembro/2025 a fevereiro/2026:
 
 ### Super Admin
 
